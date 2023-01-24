@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <script>
+    let verblist = ["anticipate","expand","finish","decorate","speak","spot","isolate","possess","feel","divert","deliver","consume","demonstrate","date","wait","fuck","reverse","conduct","wave","call","devote","know","specify","save","spill","fly","return","reproduce","interpret","wake","suspect","protect","interfere","survive","want","confront","emerge","implement","identify","pray","tend","charge","switch","send","compel","act","target","translate","ensure","part","hit","ring","close","go","crush","own","present","reach","consume","derive","relax","spot","determine","face","swear","blossom","suppose","address","construct","encounter","comprise","form","devise","bloom","smile","bother","suppress","correct","cause","finish","curl","work","regulate","invest","ease","communicate","command","reserve","convict","see","enjoy","rent","write","plunge","commit","join","opt","gather","hope","part","pop","establish","exploit","hide","rise","deserve","vary","hope","measure","scatter","move","melt","persist","persuade","prevail","trade","interrupt","summon","cite","drive","drift","delay","remember","emerge","conclude","hang","direct","swallow","sum","rip","long","embrace","fill","wish","follow","frown","succeed","decorate","wake","race","state","advertise","transform","request","increase","schedule","plant","pause","devote","cause","install","cut","export","provoke","time","secure","manage","thrust","assist","incur","emphasize","mix","freeze","speak","colour","accept","fail","wipe","attain","form","hate","expect","aid","confirm","sack","await","note","cheer","prompt","pay","scratch","characterize","hit","tip","change","calm","evaluate","print","stir","exhibit","drop","choose","deem","approve","entitle","eliminate","schedule","swim","belong","revive"];
+    //document.getElementById('verb').innerHTML = verblist[0];
+    window.addEventListener('load', function () {
+        document.getElementById('verb').innerHTML = verblist[Math.floor(Math.random() * verblist.length)];
+    })
+    function generate() {
+      document.getElementById('verb').innerHTML = verblist[Math.floor(Math.random() * verblist.length)];
+    }
+</script>
+</head>
+
+<body style="background-color: black">
+    
+    <p style="color: white; font-size: 50px;">I'm gonna <span style="font-style: italic;" id="verb">[verb]</span> you. - Mario </p>
+    <button onclick="generate()">Generate</button>
+    <p><a href="https://randomwordgenerator.com/verb.php">Verbs from randomwordgenerator</a></p>
+</body>
+</html>
